@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+</head>
+<body class="grid__contacto">
+    <!-- Cabecera de la pagina -->
+    <header class="navbar__contacto">
+    <!-- Barra de navegación -->
+    <nav class="flexContainer">
+        <a href="../index.html"><img class="logo" src="../assets/logoblanco.png"></a>
+        <ul class="menu">
+            <li><a class="menuItems" href="../pages/productos.html">Productos</a></li>
+            <li><a class="menuItems" href="../pages/about.html">Sobre Nosotros</a></li>
+            <li><a class="menuItems" href="../pages/contacto.html">Contacto</a></li>
+            <li><a class="menuItems" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+            </ul>
+    </nav>
+    <!-- Fin barra de navegación -->
+    </header>
+    <!-- Fin de la cabecera -->
+    <section class="hijo__contacto contenido__contacto">
+        <h1 class="hh1">
+            Contacto
+        </h1>
+        <form class="form">
+            <article class="article1">
+                <div class="form__datos">
+                    <label for="nombre y apellido">
+                        Nombre y Apellido
+                    </label>
+                    <input type="text" id="nombre y apellido" />
+                </div>
+                <div class="form__datos">
+                    <label for="telefono">
+                        Telefono
+                    </label>
+                    <input type="tel" id="telefono" maxlenght="10" />
+                </div>
+                <div class="form__datos">
+                    <label for="mail">
+                        E-mail
+                    </label>
+                    <input type="email" id="mail" />
+                </div>
+                <div class="form__datos">
+                    <label for="localidad">
+                        Localidad
+                    </label>
+                    <select>
+                        <option>Buenos Aires</option>
+                        <option>Capital Federal</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="form__datos">
+                    <label for="asunto">
+                        Asunto
+                    </label>
+                    <select>
+                        <option>Presupuesto</option>
+                        <option>Envíos</option>
+                        <option>Devolución</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+            </article>
+            <article class="form__mensaje">
+                <label for="mensaje">
+                    ¿En qué podemos ayudarte?
+                </label>
+                <textarea id="mensaje" rows="10" cols="20"></textarea>
+                <label>
+                    ¿Querés recibir nuestras promociones y novedades?
+                </label>
+                <div class="form__boxes">
+                    <span>Si</span>
+                    <input type="radio" name="opcion" value="Si" />
+                    <span>No</span>
+                    <input type="radio" name="opcion" value="No" />
+                </div>
+                <label>
+                    Acepto los Términos y Condiciones
+                </label>
+                <div class="form__boxes">
+                    <span>Si</span>
+                    <input type="checkbox" name="aceptar" value="Si" />
+                    <span>No</span>
+                    <input type="checkbox" name="no aceptar" value="No" />
+                </div>
+                <div class="form__btn">
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Borrar" />
+                </div>
+            </article>
+        </form>
+    </section>
+    <!-- Footer -->
+    <!-- La idea final es que las redes queden alineadas a contacto y preguntas, no debajo-->
+    <footer class="footer__contacto">
+        <div>
+            <ul>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <p>Copyright AZTK Indumentaria-2022. Todos los derechos reservados.</p>
+        <div class="redesSociales">
+            <h5>Seguinos!</h5>
+            <a href="https://www.instagram.com/aztk.ar/channel/">Instagram</a>
+            <a href="https://vm.tiktok.com/ZMLTRyVEX/">Tik Tok</a>
+        </div>
+    </footer>
+    <!-- Fin de Footer -->
+</body>
+</html>

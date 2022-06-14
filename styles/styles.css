@@ -1,0 +1,557 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Fuentes*/
+.h1 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.hh1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.parrafos, .parrafoAbout {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.773);
+    text-align: justify;
+    margin: 20px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+/*Fin de Fuentes*/
+.logoIndex {
+    display: block;
+    margin: 0px auto;
+    height: 100px;
+    width: 100px;
+}
+
+/*Promociones*/
+.promos {
+    background-color: #42b877;
+    padding: 1px;
+    margin: 0px;
+    color: #ffffff;
+    text-align: center;
+    height: 25px;
+    width: 30;
+}
+
+/*Fin de Promociones*/
+.indexGridFonts {
+    color: #fffbfb;
+    background-color: rgba(0, 0, 0, 0.266);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.gridIndex {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "header header header header"
+        "header header header header"
+        "navbar navbar navbar navbar"
+        "navbar navbar navbar navbar"
+        "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 410px repeat(4, 2fr) 0.3fr;
+}
+
+.header__area {
+    grid-area: header;
+    background-image: url(../assets/DSC_24902.JPG);
+    background-size: cover;
+}
+
+.navbar__area {
+    display: grid;
+    grid-area: navbar;
+    grid-template-areas:
+        "ul ul ul ul"
+        "ul ul ul ul"
+        "ul ul ul ul"
+        "ul ul ul ul";
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(4, 4fr);
+}
+
+.ul__area {
+    display: grid;
+    grid-template-areas:
+        "productos about contacto faq"
+        "productos about contacto faq"
+        "productos about contacto faq"
+        "productos about contacto faq";
+    grid-area: ul;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 80px);
+    list-style: none;
+}
+
+.grid__Hijo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productos__area {
+    grid-area: productos;
+    background-image: url(../assets/productos.png);
+    background-size: cover;
+}
+
+.about__area {
+    grid-area: about;
+    text-align: center;
+    background-image: url(../assets/about2.png);
+    background-size: cover;
+}
+
+.contacto__area {
+    grid-area: contacto;
+    text-align: center;
+    background-image: url(../assets/contacto.png);
+    background-size: cover;
+}
+
+.faq__area {
+    grid-area: faq;
+    text-align: center;
+    background-image: url(../assets/faq.png);
+    background-size: cover;
+}
+
+.footer__area {
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    border-top-style: groove;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+/*Navbar*/
+.flexContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo , .logoProductos {
+    height: 100px;
+    width: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 650px;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+}
+/*Fin de Navbar*/
+
+/*Productos*/
+.grid__productos {
+    display: grid;
+    grid-template-areas:
+        "promo promo promo"
+        "navbar navbar navbar"
+        "contenido contenido contenido"
+        "footer footer footer";
+    grid-template-columns: 100% repeat(2, 1fr);
+    grid-template-rows: 1fr ;
+    height: 100vh;
+    width: 100%;
+}
+
+.promo__productos {
+    grid-area: promo;
+    background-color: #42b877;
+    padding: 1px;
+    margin: 0px;
+    color: #ffffff;
+    text-align: center;
+    height: 25px;
+    width: 30;
+}
+
+.contenido__productos {
+    grid-area: contenido;
+    background-image: url(../assets/background5.JPG);
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    overflow: hidden;
+}
+
+.card__image {
+    background-color: gainsboro;
+    margin: 10px;
+}
+
+.card__title {
+    position: static;
+    background-color: gainsboro;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(32, 29, 29);
+}
+
+.card__description {
+    position: static;
+    background-color: gainsboro;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(32, 29, 29);
+}
+
+.btn {
+    position: static;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #39ce7c;
+    text-align: center;
+}
+
+.hijo__productos {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    height: 100vh;
+}
+/*Fin Productos*/
+
+/*P Frecuentes*/
+.grid__faq {
+    display: grid;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "contenido contenido contenido"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar__faq , .navbar__about , .navbar__contacto, .navbar__productos {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+}
+
+.contenido__faq {
+    display: grid;
+    grid-area: contenido;
+    align-items: center;
+    background-image: url(../assets/background4.JPG);
+    background-size: cover;
+}
+
+.footer__faq , .footer__about , .footer__contacto , .footer__productos {
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    border-top-style: groove;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.711);
+    text-align: justify;
+    margin: 20px;
+    width: 800px;
+}
+
+.table {
+    table-layout: fixed;
+    width: 25%;
+    border-collapse: collapse;
+    border: 5px solid rgb(100, 164, 100);
+    text-align: center;
+}
+
+.hijo__faq {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/*Fin P Frecuentes*/
+
+/*Contacto*/
+.grid__contacto {
+    display: grid;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "contenido contenido contenido"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    height: 100vh;
+}
+
+.contenido__contacto {
+    grid-area: contenido;
+    background-image: url(../assets/background2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hijo__contacto {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    height: 100vh;
+}
+
+/*Formulario*/
+.form {
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+    justify-content: space-between;
+    align-content: center;
+    color: #000000;
+    background-color: rgba(250, 235, 215, 0.512);
+    height: 615px;
+    width: 650px;
+    padding: 50px;
+}
+
+.article1 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+.form__datos {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(250, 235, 215, 0);
+    text-align: center;
+    align-items: center;
+}
+
+.form__mensaje {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+.form__boxes {
+    display: flex;
+    flex-flow: row;
+    background-color: rgba(250, 235, 215, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+/*Fin de contacto*/
+
+/*Sobre nosotros*/
+.grid__about {
+    display: grid;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "contenido contenido contenido"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 3fr 0.2fr;
+    height: 100vh;
+    width: fit-content;
+}
+
+.contenido__about {
+    grid-area: contenido;
+    height: 650px;
+    background-image: url(../assets/background3.JPG);
+    background-size: cover;
+}
+
+.hijo__about {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    align-content: space-around;
+}
+/*Fin Sobre nosotros*/
+
+@media screen and (max-width: 648px) {
+    .ul__area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid__Hijo {
+        flex: 1;
+        padding-block: 30px;
+    }
+
+    .header__area {
+        background-position: center;
+    }
+
+    .logoIndex {
+        height: 80px;
+        width: 80px;
+        margin-top: 10px;
+    }
+
+    .logoProductos {
+        height: 78px;
+        width: 78px;
+    }
+    .promos , .promo__productos {
+        font-size: small;
+        padding: 5px;
+    }
+
+    .productos {
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .grid__faq , .grid__about ,.grid__contacto , .grid__productos{
+        grid-template-rows: 200px 3fr 0.2fr;
+    }
+
+    .navbar__faq , .navbar__about , .navbar__contacto , .navbar__productos{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-around;
+        width: 45vh;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .preguntas {
+        font-size: medium;
+        width:300px;
+        height:750px;
+        margin-top: 0px;
+    }
+    .table {
+        width: 80%;
+    }
+
+    .contenido__about {
+        background-position: center;
+    }
+    .parrafoAbout {
+        width: 300px;
+    }
+
+    .contenido__contacto {
+        background-position: center;
+    }
+
+    .form {
+        flex-flow: column wrap;
+        height: 700px;
+        width: 300px;
+        align-content: center;
+    }
+
+    .article1 {
+        align-items: center;
+    }
+    .footer__area, .footer__faq , .footer__about , .footer__contacto , .footer__productos {
+        display: grid;
+        grid-template-areas:
+            "contacto empty empty seguinos"
+            "faq copyright instagram tiktok";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(4, 2fr);
+        height: 60px;
+    }
+}
