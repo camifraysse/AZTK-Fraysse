@@ -10,40 +10,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="gridIndex">
-    <!-- Cabecera de la pagina -->
-    <header class="header__area">
-        <!-- Barra de promociones -->
-        <h3 class="promos">10% OFF PAGANDO EN EFECTIVO O TRANSFERENCIA</h3>
-        <!-- Fin de barra de promociones -->
-        <a href="./index.html"><img class="logoIndex" src="./assets/logoblanco.png"></a>
-    </header>
-    <!-- Barra de navegación -->
-    <nav class="navbar__area">
-        <ul class="ul__area">
-            <li class="grid__Hijo productos__area"><a class="indexGridFonts" href="./pages/productos.html">Productos</a></li>
-            <li class="grid__Hijo about__area"><a class="indexGridFonts" href="./pages/about.html">Sobre Nosotros</a></li>
-            <li class="grid__Hijo contacto__area"><a class="indexGridFonts" href="./pages/contacto.html">Contacto</a></li>
-            <li class="grid__Hijo faq__area"><a class="indexGridFonts" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-        </ul>
-    </nav>
-    <!-- Fin barra de navegación -->
-    <!--Footer-->
-    <footer class="footer__area">
-        <div>
-            <ul>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+<body>
+    <main class="container-fluid">
+        <!-- Cabecera de la pagina -->
+        <header class="row headerIndex">
+            <!-- Barra de promociones -->
+            <h3 class="col promos">10% OFF PAGANDO EN EFECTIVO O TRANSFERENCIA</h3>
+            <!-- Fin de barra de promociones -->
+            <br>
+            <a href="./index.html"><img class="col logo" src="./assets/logoblanco.png"></a>
+        </header>
+        <!-- Barra de navegación -->
+        <nav>
+            <ul class="row ul ">
+                <li class="col productosIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/productos.html">Productos</a></li>
+                <li class="col aboutIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/about.html">Sobre Nosotros</a></li>
+                <li class="col contactoIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/contacto.html">Contacto</a></li>
+                <li class="col faqIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
             </ul>
-        </div>
-        <p>Copyright AZTK Indumentaria-2022. Todos los derechos reservados.</p>
-        <div class="redesSociales">
-            <h5>Seguinos!</h5>
-            <a href="https://www.instagram.com/aztk.ar/channel/">Instagram</a>
-            <a href="https://vm.tiktok.com/ZMLTRyVEX/">Tik Tok</a>
-        </div>
-    </footer>
+        </nav>
+        <!-- Fin barra de navegación -->
+        <!--Footer-->
+        <footer class="footer">
+            <div>
+                <ul>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <p>Copyright AZTK Indumentaria-2022. Todos los derechos reservados.</p>
+            <div class="redesSociales">
+                <h5>Seguinos!</h5>
+                <a href="https://www.instagram.com/aztk.ar/channel/">Instagram</a>
+                <a href="https://vm.tiktok.com/ZMLTRyVEX/">Tik Tok</a>
+            </div>
+        </footer>
+    </main>
     <!-- Fin de Footer -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
