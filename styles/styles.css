@@ -175,6 +175,15 @@
 
 /*Productos*/
 .productos {
+    background-image: url(../assets/background5.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.cards{
+    display: grid;
+    gap: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -185,11 +194,12 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    height: 400px;
+    height: 100%;
     width: 250px;
     border-radius: 20px;
     background-color: gainsboro;
     overflow: hidden;
+    padding: 10px;
 }
 
 .cards-image {
@@ -223,32 +233,13 @@
 }
 /*Fin Productos*/
 /*P Frecuentes*/
-.grid__faq {
-    display: grid;
-    grid-template-areas:
-        "navbar navbar navbar"
-        "contenido contenido contenido"
-        "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px;
-    height: 100vh;
-    width: 100%;
-}
-
-.navbar__faq , .navbar__contacto {
-    grid-area: navbar;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #000;
-}
-
-.contenido__faq {
-    display: grid;
-    grid-area: contenido;
-    align-items: center;
+.faq {
     background-image: url(../assets/background4.JPG);
     background-size: cover;
+    background-position-x: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-content:space-around;
 }
 
 .preguntas {
@@ -260,20 +251,16 @@
     background-color: rgba(255, 255, 255, 0.711);
     text-align: justify;
     margin: 20px;
-    width: 800px;
+    width: 50%;
+    overflow: hidden;
 }
 
-.table {
+.tabla {
     table-layout: fixed;
-    width: 25%;
+    width: 60%;
     border-collapse: collapse;
-    border: 5px solid rgb(100, 164, 100);
+    border: 3px solid rgb(100, 164, 100);
     text-align: center;
-}
-
-.hijo__faq {
-    display: flex;
-    flex-flow: column wrap;
 }
 
 /*Fin P Frecuentes*/
@@ -283,28 +270,28 @@
     background-image: url(../assets/background2.JPG);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: center;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    align-content: space-around;
 }
 /*Formulario*/
 .form {
     display: flex;
-    flex-direction: row;
-    align-self: baseline;
-    justify-content: space-between;
-    align-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
     color: #000000;
     background-color: rgba(250, 235, 215, 0.512);
-    height: 615px;
-    width: 650px;
+    height: 70%;
+    width: 50%;
     padding: 50px;
 }
 
 .article1 {
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     justify-items: center;
     background-color: rgba(250, 235, 215, 0);
@@ -341,12 +328,13 @@
     justify-content: space-evenly;
 }
 .form__btn {
-    width: 80px;
-    height: 30px;
-    border-radius: 20px;
+    width: 5vw;
+    height: 3vh;
+    border-radius: 5px;
     cursor: pointer;
     letter-spacing: 2px;
     transition: all 0.5s ease;
+    overflow: hidden;
 }
 
 .form__btn:hover {
@@ -365,21 +353,11 @@
     background-image: url(../assets/background3.JPG);
     background-size: cover;
     background-position-x: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
 }
 /*Fin Sobre nosotros*/
-
-.footer__faq , .footer__contacto {
-    grid-area: footer;
-    background-color: rgb(0, 0, 0);
-    border-top-style: groove;
-    color: rgb(255, 255, 255);
-    font-size: small;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
 
 @media screen and (max-width: 768px) {
     .indexGridFonts{
@@ -395,56 +373,30 @@
         gap: 10px;
         margin-bottom: 10px;
     }
-    .grid__faq , .grid__contacto {
-        grid-template-rows: 200px 3fr 0.2fr;
-    }
-
-    .navbar__faq ,.navbar__contacto {
-        display: flex;
-        flex-flow: column wrap;
-        align-content: space-around;
-        width: 45vh;
-    }
-
-    .flexContainer {
-        flex-direction: column;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-
+    
     .preguntas {
-        font-size: medium;
-        width:300px;
-        height:750px;
+        font-size: small;
+        width:90%;
+        height:100%;
         margin-top: 0px;
     }
     .table {
         width: 80%;
     }
 
-    .contenido__contacto {
-        background-position: center;
-    }
-
     .form {
-        flex-flow: column wrap;
-        height: 700px;
-        width: 300px;
-        align-content: center;
+        flex-direction: column;
+        width: 100%;
     }
 
+    .form__btn {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        height: 5vh;
+    }
+    
     .article1 {
         align-items: center;
-    }
-    .footer__faq , .footer__contacto {
-        display: grid;
-        grid-template-areas:
-            "contacto empty empty seguinos"
-            "faq copyright instagram tiktok";
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repeat(4, 2fr);
-        height: 60px;
     }
 }
