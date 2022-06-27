@@ -17,60 +17,53 @@
     <!-- Cabecera de la pagina -->
     <header>
         <!-- Barra de navegación -->
-        <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/logoblanco.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                        </li>
-                    </ul>
+              <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/logoblanco2.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
+                  <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  <a class="nav-link" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
                 </div>
+              </div>
             </div>
-        </nav>
+          </nav>
         <!-- Fin barra de navegación -->
     </header>
-    <main class="grid__about">
-        <section class="contenido__about">
-            <h1 class="hh1">Sobre Nosotros</h1>
+    <main class="container-fluid">
+        <section class="row about">
+            <h1 class="hh1 col">Sobre Nosotros</h1>
             <article>
-                <p class="parrafoAbout">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia.
-                    Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio
-                    eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Dignissimos ipsa inventore, debitis distinctio voluptatem atque
-                    tempora corrupti quod optio laborum odit, molestias tenetur, nesciunt dolorum doloremque perferendis
-                    ex! Eius, voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+                <p class="parrafoAbout col mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia.Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit, molestias tenetur, nesciunt dolorum doloremque perferendisex! Eius, voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia.Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit, molestias tenetur, nesciunt dolorum doloremque perferendisex! Eius, voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia.Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit, molestias tenetur, nesciunt dolorum doloremque perferendisex! Eius, voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing, elit.
+                </p>
             </article>
         </section>
         <!-- Footer -->
-        <!-- La idea final es que las redes queden alineadas a contacto y preguntas, no debajo-->
-        <footer class="footer__about">
-            <div>
-                <ul>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                </ul>
-            </div>
-            <p>Copyright AZTK Indumentaria-2022.</p>
-            <div class="redesSociales">
-                <h6>Seguinos!</h6>
-                <a href="https://www.instagram.com/aztk.ar/channel/">Instagram</a>
-                <a href="https://vm.tiktok.com/ZMLTRyVEX/">Tik Tok</a>
-            </div>
+        <footer class="text-center footer-style footer">
+                <div class="row">
+                    <div class="col footer-col position-relative">
+                        <li class="position-absolute top-0 start-50 translate-middle-x"><a class="col" href="./pages/contacto.html">Contacto</a></li>
+                        <li class="position-absolute bottom-0 start-50 translate-middle-x"><a class="col" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    </div>
+                    <div class="col-8 footer-col position-relative">
+                        <p class="position-absolute top-50 start-50 translate-middle">Copyright AZTK Indumentaria 2022.</p>
+                    </div>
+                    <div class="col footer-col position-relative">
+                        <ul class="list-inline">
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/aztk.ar/channel" class="btn-social btn-outline">Instagram<i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://vm.tiktok.com/ZMLTRyVEX/" class="btn-social btn-outline">Tik Tok<i class="fa fa-fw fa-tiktok"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </footer>
     </main>
     <!-- Fin de Footer -->

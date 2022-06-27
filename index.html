@@ -14,41 +14,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <main class="container-fluid">
-        <!-- Cabecera de la pagina -->
-        <header class="row headerIndex">
+    <!-- Cabecera de la pagina -->
+    <header class="container-fluid">
+        <div class="row headerIndex">
             <!-- Barra de promociones -->
-            <h3 class="col promos">10% OFF PAGANDO EN EFECTIVO O TRANSFERENCIA</h3>
+            <h3 class="col-12 promos">10% OFF PAGANDO EN EFECTIVO O TRANSFERENCIA</h3>
             <!-- Fin de barra de promociones -->
-            <br>
-            <a href="./index.html"><img class="col logo" src="./assets/logoblanco.png"></a>
-        </header>
-        <!-- Barra de navegación -->
-        <nav>
-            <ul class="row ul ">
-                <li class="col productosIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/productos.html">Productos</a></li>
-                <li class="col aboutIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/about.html">Sobre Nosotros</a></li>
-                <li class="col contactoIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/contacto.html">Contacto</a></li>
-                <li class="col faqIndex position-relative"><a class="indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-            </ul>
-        </nav>
-        <!-- Fin barra de navegación -->
-        <!--Footer-->
-        <footer class="footer">
-            <div>
-                <ul>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                </ul>
+            <div class="col">
+              <a href="./index.html"><img class="logoIndex" src="./assets/logoblanco.png"></a>
             </div>
-            <p>Copyright AZTK Indumentaria-2022. Todos los derechos reservados.</p>
-            <div class="redesSociales">
-                <h5>Seguinos!</h5>
-                <a href="https://www.instagram.com/aztk.ar/channel/">Instagram</a>
-                <a href="https://vm.tiktok.com/ZMLTRyVEX/">Tik Tok</a>
+        </div>
+    </header>
+    <!-- Barra de navegación -->
+    <nav class="container-fluid">
+        <ul class="row ul">
+              <li class="productosIndex position-relative col-sm-3"><a class="col indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/productos.html">Productos</a></li>
+              <li class="aboutIndex position-relative col-sm-3"><a class="col indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/about.html">Sobre Nosotros</a></li>
+              <li class="contactoIndex position-relative col-sm-3"><a class="col indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/contacto.html">Contacto</a></li>
+              <li class="faqIndex position-relative col-sm-3"><a class="col indexGridFonts position-absolute top-50 start-50 translate-middle" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+        </ul>
+    </nav>
+    <!-- Fin barra de navegación -->
+    <!--Footer-->
+    <footer class="text-center footer-style footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col footer-col position-relative">
+                    <li class="position-absolute top-0 start-50 translate-middle-x"><a class="col" href="./pages/contacto.html">Contacto</a></li>
+                    <li class="position-absolute bottom-0 start-50 translate-middle-x"><a class="col" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                </div>
+                <div class="col-8 footer-col position-relative">
+                    <p class="position-absolute top-50 start-50 translate-middle">Copyright AZTK Indumentaria 2022.</p>
+                </div>
+                <div class="col footer-col position-relative">
+                    <ul class="list-inline">
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/aztk.ar/channel" class="btn-social btn-outline">Instagram<i class="fa fa-fw fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vm.tiktok.com/ZMLTRyVEX/" class="btn-social btn-outline">Tik Tok<i class="fa fa-fw fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
     <!-- Fin de Footer -->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

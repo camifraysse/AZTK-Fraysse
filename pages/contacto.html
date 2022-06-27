@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,24 +13,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="grid__contacto">
+<body>
     <!-- Cabecera de la pagina -->
-    <header class="navbar__contacto">
-    <!-- Barra de navegación -->
-    <nav class="flexContainer">
-        <a href="../index.html"><img class="logo" src="../assets/logoblanco.png"></a>
-        <ul class="menu">
-            <li><a class="menuItems" href="../pages/productos.html">Productos</a></li>
-            <li><a class="menuItems" href="../pages/about.html">Sobre Nosotros</a></li>
-            <li><a class="menuItems" href="../pages/contacto.html">Contacto</a></li>
-            <li><a class="menuItems" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-            </ul>
-    </nav>
-    <!-- Fin barra de navegación -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/logoblanco2.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
+                        <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin barra de navegación -->
     </header>
     <!-- Fin de la cabecera -->
-    <section class="hijo__contacto contenido__contacto">
+    <section class="contenido__contacto">
         <h1 class="hh1">
             Contacto
         </h1>
@@ -106,21 +118,32 @@
         </form>
     </section>
     <!-- Footer -->
-    <!-- La idea final es que las redes queden alineadas a contacto y preguntas, no debajo-->
-    <footer class="footer__contacto">
-        <div>
-            <ul>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-            </ul>
-        </div>
-        <p>Copyright AZTK Indumentaria-2022. Todos los derechos reservados.</p>
-        <div class="redesSociales">
-            <h5>Seguinos!</h5>
-            <a href="https://www.instagram.com/aztk.ar/channel/">Instagram</a>
-            <a href="https://vm.tiktok.com/ZMLTRyVEX/">Tik Tok</a>
+    <footer class="text-center footer-style footer">
+        <div class="row">
+            <div class="col footer-col position-relative">
+                <li class="position-absolute top-0 start-50 translate-middle-x"><a class="col"
+                        href="./pages/contacto.html">Contacto</a></li>
+                <li class="position-absolute bottom-0 start-50 translate-middle-x"><a class="col"
+                        href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+            </div>
+            <div class="col-8 footer-col position-relative">
+                <p class="position-absolute top-50 start-50 translate-middle">Copyright AZTK Indumentaria 2022.</p>
+            </div>
+            <div class="col footer-col position-relative">
+                <ul class="list-inline">
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/aztk.ar/channel"
+                            class="btn-social btn-outline">Instagram<i class="fa fa-fw fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://vm.tiktok.com/ZMLTRyVEX/" class="btn-social btn-outline">Tik
+                            Tok<i class="fa fa-fw fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
-    <!-- Fin de Footer -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

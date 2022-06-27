@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 /*Fuentes*/
@@ -16,8 +17,8 @@
 }
 
 .hh1 {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+    color: rgb(255, 254, 254);
+    font-weight: bolder;
     font-size: xx-large;
     text-align: center;
     text-decoration: underline;
@@ -28,7 +29,7 @@
     text-align: center;
 }
 
-.parrafos, .parrafoAbout {
+.parrafos{
     padding: 20px;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.773);
@@ -38,21 +39,33 @@
     font-size: medium;
 }
 
+.parrafoAbout{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.773);
+    text-align: justify;
+    font-weight: bold;
+    font-size: medium;
+    width: 50vw;
+
+}
 /*Fin de Fuentes*/
 .logoIndex {
-    height: 100px;
-    width: 100px;
+    height: 10%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
 }
-
+.logo{
+    width: 50%;
+}
 /*Promociones*/
 .promos {
     background-color: #42b877;
-    padding: 1px;
-    margin: 0px;
     color: #ffffff;
     text-align: center;
-    height: 30px;
-    width: 30;
+    height: 5vh;
+    font-size:auto;
 }
 
 /*Fin de Promociones*/
@@ -67,24 +80,28 @@
 }
 .indexGridFonts:hover{
     color: #37a167;
-    }
+}
+
 .ul{
-    list-style: none;
-    height: 350px;
-    margin: 0px;
-    padding: 0px;
+    list-style:none;
+    height: 50vh;
+    width: 100vw;
+    padding: 0;
 }
 
 .headerIndex {
     background-image: url(../assets/DSC_24902.JPG);
     background-size: cover;
     height: 100vh;
+    background-position-x: center;
+    overflow: hidden;
 }
 
 .productosIndex {
     grid-area: productos;
     background-image: url(../assets/productos.png);
     background-size: cover;
+    background-position-x: center;
 }
 
 .aboutIndex {
@@ -92,6 +109,7 @@
     text-align: center;
     background-image: url(../assets/about2.png);
     background-size: cover;
+    background-position-x: center;
 }
 
 .contactoIndex {
@@ -99,6 +117,7 @@
     text-align: center;
     background-image: url(../assets/contacto.png);
     background-size: cover;
+    background-position-x: center;
 }
 
 .faqIndex {
@@ -106,6 +125,8 @@
     text-align: center;
     background-image: url(../assets/faq.png);
     background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 .productosIndex:hover , .aboutIndex:hover , .contactoIndex:hover , .faqIndex:hover{
@@ -113,16 +134,11 @@
 }
 
 .footer {
-    display: grid;
-    grid-area: footer;
     background-color: rgb(0, 0, 0);
     border-top-style: groove;
     color: rgb(255, 255, 255);
-    font-size: small;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    font-size: x-small;
+    text-align: center;
     width: 100%;
 }
 
@@ -134,11 +150,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.logo , .logoProductos {
-    height: 100px;
-    width: 100px;
 }
 
 .menu {
@@ -163,36 +174,6 @@
 /*Fin de Navbar*/
 
 /*Productos*/
-.grid__productos {
-    display: grid;
-    grid-template-areas:
-        "promo promo promo"
-        "navbar navbar navbar"
-        "contenido contenido contenido"
-        "footer footer footer";
-    grid-template-columns: 100% repeat(2, 1fr);
-    grid-template-rows: 1fr ;
-    height: 100vh;
-    width: 100%;
-}
-
-.promo__productos {
-    grid-area: promo;
-    background-color: #42b877;
-    padding: 1px;
-    margin: 0px;
-    color: #ffffff;
-    text-align: center;
-    height: 25px;
-    width: 30;
-}
-
-.contenido__productos {
-    grid-area: contenido;
-    background-image: url(../assets/background5.JPG);
-    background-size: cover;
-    background-repeat: repeat-x;
-}
 .productos {
     display: flex;
     flex-direction: row;
@@ -200,8 +181,7 @@
     justify-content: space-around;
     margin-bottom: 10px;
 }
-
-.card {
+.cards-productos {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -212,41 +192,36 @@
     overflow: hidden;
 }
 
-.card__image {
+.cards-image {
     background-color: gainsboro;
     margin: 10px;
 }
 
-.card__title {
+.cards-title {
     position: static;
     background-color: gainsboro;
     font-family: 'Poppins', sans-serif;
     color: rgb(32, 29, 29);
+    overflow: hidden;
 }
 
-.card__description {
+.cards-description {
     position: static;
     background-color: gainsboro;
     font-family: 'Poppins', sans-serif;
     color: rgb(32, 29, 29);
+    overflow: hidden;
 }
 
-.btn {
+.btn-productos {
     position: static;
     width: 150px;
     border-radius: 20px;
     background-color: #39ce7c;
     text-align: center;
-}
-
-.hijo__productos {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-around;
-    height: 100vh;
+    overflow: hidden;
 }
 /*Fin Productos*/
-
 /*P Frecuentes*/
 .grid__faq {
     display: grid;
@@ -260,7 +235,7 @@
     width: 100%;
 }
 
-.navbar__faq , .navbar__contacto, .navbar__productos {
+.navbar__faq , .navbar__contacto {
     grid-area: navbar;
     display: flex;
     justify-content: space-evenly;
@@ -304,19 +279,7 @@
 /*Fin P Frecuentes*/
 
 /*Contacto*/
-.grid__contacto {
-    display: grid;
-    grid-template-areas:
-        "navbar navbar navbar"
-        "contenido contenido contenido"
-        "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px;
-    height: 100vh;
-}
-
 .contenido__contacto {
-    grid-area: contenido;
     background-image: url(../assets/background2.JPG);
     background-size: cover;
     background-repeat: no-repeat;
@@ -324,14 +287,6 @@
     display: flex;
     flex-direction: column;
 }
-
-.hijo__contacto {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-around;
-    height: 100vh;
-}
-
 /*Formulario*/
 .form {
     display: flex;
@@ -405,34 +360,15 @@
 /*Fin de contacto*/
 
 /*Sobre nosotros*/
-.grid__about {
-    display: grid;
-    grid-template-areas:
-        "contenido contenido contenido"
-        "footer footer footer";
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3fr 0.2fr;
-    height: 100vh;
-    width: fit-content;
-}
-
-.contenido__about {
-    grid-area: contenido;
+.about {
     height: 100vh;
     background-image: url(../assets/background3.JPG);
     background-size: cover;
-}
-
-.hijo__about {
-    display: flex;
-    flex-flow: column wrap;
-    height: 100vh;
-    align-content: space-around;
+    background-position-x: center;
 }
 /*Fin Sobre nosotros*/
 
-
-.footer__faq , .footer__about , .footer__contacto , .footer__productos {
+.footer__faq , .footer__contacto {
     grid-area: footer;
     background-color: rgb(0, 0, 0);
     border-top-style: groove;
@@ -445,36 +381,13 @@
 }
 
 
-@media screen and (max-width: 648px) {
-    .ul__area {
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+    .indexGridFonts{
+        font-size: larger;
     }
-
-    .grid__Hijo {
-        flex: 1;
-        padding-block: 30px;
+    .promos{
+        font-size: medium;
     }
-
-    .header__area {
-        background-position: center;
-    }
-
-    .logoIndex {
-        height: 80px;
-        width: 80px;
-        margin-top: 10px;
-    }
-
-    .logoProductos {
-        height: 78px;
-        width: 78px;
-    }
-    .promos , .promo__productos {
-        font-size: small;
-        padding: 5px;
-    }
-
     .productos {
         flex-flow: column nowrap;
         justify-content: space-around;
@@ -482,12 +395,11 @@
         gap: 10px;
         margin-bottom: 10px;
     }
-
-    .grid__faq , .grid__about ,.grid__contacto , .grid__productos{
+    .grid__faq , .grid__contacto {
         grid-template-rows: 200px 3fr 0.2fr;
     }
 
-    .navbar__faq ,.navbar__contacto , .navbar__productos{
+    .navbar__faq ,.navbar__contacto {
         display: flex;
         flex-flow: column wrap;
         align-content: space-around;
@@ -512,13 +424,6 @@
         width: 80%;
     }
 
-    .contenido__about {
-        background-position: center;
-    }
-    .parrafoAbout {
-        width: 300px;
-    }
-
     .contenido__contacto {
         background-position: center;
     }
@@ -533,7 +438,7 @@
     .article1 {
         align-items: center;
     }
-    .footer__faq , .footer__about , .footer__contacto , .footer__productos {
+    .footer__faq , .footer__contacto {
         display: grid;
         grid-template-areas:
             "contacto empty empty seguinos"
