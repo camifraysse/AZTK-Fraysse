@@ -134,10 +134,7 @@
 }
 
 .productos {
-  background-image: url(../assets/background5.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: center;
+  background-image: url(../assets/background5.jpg);
 }
 .productos .h1 {
   color: #000;
@@ -256,7 +253,7 @@
   color: #000;
   background-color: rgba(250, 235, 215, 0.512);
   height: 80%;
-  width: 100%;
+  width: 65vw;
   padding: 50px;
 }
 .contenido__contacto .form .article1 {
