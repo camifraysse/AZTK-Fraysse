@@ -98,14 +98,12 @@
 }
 
 .productosIndex {
-    grid-area: productos;
     background-image: url(../assets/productos.png);
     background-size: cover;
     background-position-x: center;
 }
 
 .aboutIndex {
-    grid-area: about;
     text-align: center;
     background-image: url(../assets/about2.png);
     background-size: cover;
@@ -113,7 +111,6 @@
 }
 
 .contactoIndex {
-    grid-area: contacto;
     text-align: center;
     background-image: url(../assets/contacto.png);
     background-size: cover;
@@ -121,7 +118,6 @@
 }
 
 .faqIndex {
-    grid-area: faq;
     text-align: center;
     background-image: url(../assets/faq.png);
     background-size: cover;
@@ -248,7 +244,7 @@
     align-items: center;
     padding: 40px;
     color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.711);
+    background-color: rgba(255, 255, 255, 0.886);
     text-align: justify;
     margin: 20px;
     width: 50%;

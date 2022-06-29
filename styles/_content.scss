@@ -1,0 +1,242 @@
+.productos {
+    background-image: url(../assets/background5.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+        .h1 {
+            color: $negro;
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+            text-decoration: underline;
+            padding: 20px;
+        }
+
+        .parrafos{
+            padding: 20px;
+            color: $negro;
+            background-color: $transparente;
+            text-align: justify;
+            margin: 20px;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .cards{
+            display: grid;
+            gap: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 10px;
+
+                .cards-productos {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    height: 100%;
+                    width: 250px;
+                    border-radius: 20px;
+                    background-color: $blanco;
+                    overflow: hidden;
+                    padding: 10px;
+
+                        .cards-image {
+                            background-color: $blanco;
+                            margin: 10px;
+                        }
+                        
+                        .cards-title {
+                            position: static;
+                            background-color: $blanco;
+                            font-family: 'Poppins', sans-serif;
+                            color: $negro;
+                            overflow: hidden;
+                        }
+                        
+                        .cards-description {
+                            position: static;
+                            background-color: $blanco;
+                            font-family: 'Poppins', sans-serif;
+                            color: $negro;
+                            overflow: hidden;
+                        }
+                        
+                        .btn-productos {
+                            position: static;
+                            width: 150px;
+                            border-radius: 20px;
+                            background-color: $verde;
+                            text-align: center;
+                            overflow: hidden;
+                        }
+                }
+        }
+}
+
+.about {
+    height: 100vh;
+    background-image: url(../assets/background3.JPG);
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+
+        .hh1 {
+            color: $blanco;
+            font-weight: bolder;
+            font-size: xx-large;
+            text-align: center;
+            text-decoration: underline;
+            padding: 20px;
+        }
+
+        .parrafoAbout{
+            padding: 20px;
+            color: $negro;
+            background-color:$transparente;
+            text-align: justify;
+            font-weight: bold;
+            font-size: medium;
+            width: 50vw;
+        
+        }
+}
+
+.contenido__contacto {
+    background-image: url(../assets/background2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+
+        .hh1 {
+            color: $blanco;
+            font-weight: bolder;
+            font-size: xx-large;
+            text-align: center;
+            text-decoration: underline;
+            padding: 20px;
+        }
+
+        .form {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            color: $negro;
+            background-color: $beige;
+            height: 70%;
+            width: 50%;
+            padding: 50px;
+
+            .article1 {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: space-around;
+                justify-items: center;
+                background-color:$negro-transparente;
+
+                .form__datos {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    background-color:$negro-transparente;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+
+            .form__mensaje {
+                display: flex;
+                flex-flow: column wrap;
+                text-align: center;
+                justify-content: space-around;
+                align-items: center;
+                background-color:$negro-transparente;
+
+                .form__boxes {
+                    display: flex;
+                    flex-flow: row;
+                    background-color:$negro-transparente;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .form__btns{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                    .form__btn {
+                        width: 5vw;
+                        height: 3vh;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        letter-spacing: 2px;
+                        transition: all 0.5s ease;
+                        overflow: hidden;
+
+                        &:hover {
+                            background: $verde;
+                            color: $negro;
+                            box-shadow: 0px 10px 25px
+                            $verdeClaro;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+.faq {
+    background-image: url(../assets/background4.JPG);
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-content:space-around;
+
+        .h1 {
+            color: $negro;
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+            text-decoration: underline;
+            padding: 20px;
+        }
+
+            .preguntas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px;
+                color: $negro;
+                background-color: $transparente;
+                text-align: justify;
+                margin: 20px;
+                width: 50%;
+                overflow: hidden;
+
+                .h3 {
+                    text-align: center;
+                }
+
+                .tabla {
+                    table-layout: fixed;
+                    width: 60%;
+                    border-collapse: collapse;
+                    border: 3px solid $verde;
+                    text-align: center;
+                }
+
+                 .h3 {
+                    text-align: center;
+                }
+            }
+        }

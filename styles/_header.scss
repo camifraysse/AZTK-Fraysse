@@ -1,0 +1,139 @@
+.headerIndex {
+    background-image: url(../assets/DSC_24902.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-position-x: center;
+    overflow: hidden;
+        .promos {
+            background-color: $verde;
+            color: $blanco;
+            text-align: center;
+            height: 5vh;
+            font-size:auto;
+        }
+
+        .logoIndex {
+            height: 10%;
+            display:block;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+}
+
+.ul{
+    list-style:none;
+    height: 50vh;
+    width: 100vw;
+    padding: 0;
+
+        .productosIndex {
+            background-image: url(../assets/productos.png);
+            background-size: cover;
+            background-position-x: center;
+
+                .indexGridFonts {
+                    color: $blanco;
+                    background-color: $negro-transparente;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bolder;
+                    font-size: xx-large;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                        &:hover{
+                            color: $verde;
+                        }
+                }
+                &:hover{
+                    transform:scaleX(1.2)
+                }
+        }
+
+        .aboutIndex {
+            text-align: center;
+            background-image: url(../assets/about2.png);
+            background-size: cover;
+            background-position-x: center;
+
+                .indexGridFonts {
+                    color: $blanco;
+                    background-color: $negro-transparente;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bolder;
+                    font-size: xx-large;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                        &:hover{
+                            color: $verde;
+                        }
+                }
+                &:hover{
+                    transform:scaleX(1.2)
+                }
+        }
+
+        .contactoIndex {
+            text-align: center;
+            background-image: url(../assets/contacto.png);
+            background-size: cover;
+            background-position-x: center;
+
+                .indexGridFonts {
+                    color: $blanco;
+                    background-color: $negro-transparente;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bolder;
+                    font-size: xx-large;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                        &:hover{
+                            color: $verde;
+                        }
+                }
+                &:hover{
+                    transform:scaleX(1.2)
+                }
+        }
+
+        .faqIndex {
+            text-align: center;
+            background-image: url(../assets/faq.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+
+                .indexGridFonts {
+                    color: $blanco;
+                    background-color: $negro-transparente;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bolder;
+                    font-size: xx-large;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                        &:hover{
+                            color: $verde;
+                        }
+                }
+                &:hover{
+                    transform:scaleX(1.2)
+                }
+        }
+}
+
+.promos {
+        background-color: $verde;
+        color: $blanco;
+        text-align: center;
+        height: 5vh;
+        font-size:auto;
+    }
+
+.nav {
+        font-size: x-large;
+        .logo{
+            width: 50%;
+        }
+    }
