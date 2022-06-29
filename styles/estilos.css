@@ -133,6 +133,15 @@
   width: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .indexGridFonts {
+    font-size: larger;
+  }
+
+  .promos {
+    font-size: medium;
+  }
+}
 .productos {
   background-image: url(../assets/background5.JPG);
   background-size: cover;

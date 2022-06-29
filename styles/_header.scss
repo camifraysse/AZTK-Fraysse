@@ -137,3 +137,12 @@
             width: 50%;
         }
     }
+
+@media screen and (max-width: 768px) {
+    .indexGridFonts{
+        font-size: larger;
+    }
+    .promos{
+        font-size: medium;
+    }
+}
