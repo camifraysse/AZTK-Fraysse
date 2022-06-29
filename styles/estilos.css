@@ -133,15 +133,6 @@
   width: 50%;
 }
 
-.footer {
-  background-color: #000;
-  border-top-style: groove;
-  color: #ffffff;
-  font-size: x-small;
-  text-align: center;
-  width: 100%;
-}
-
 .productos {
   background-image: url(../assets/background5.JPG);
   background-size: cover;
@@ -261,11 +252,11 @@
 .contenido__contacto .form {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: #000;
   background-color: rgba(250, 235, 215, 0.512);
-  height: 70%;
-  width: 50%;
+  height: 80%;
+  width: 100%;
   padding: 50px;
 }
 .contenido__contacto .form .article1 {
@@ -305,7 +296,7 @@
 }
 .contenido__contacto .form .form__mensaje .form__btns .form__btn {
   width: 5vw;
-  height: 3vh;
+  height: 5vh;
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 2px;
@@ -343,7 +334,7 @@
   background-color: rgba(255, 255, 255, 0.773);
   text-align: justify;
   margin: 20px;
-  width: 50%;
+  width: 70%;
   overflow: hidden;
 }
 .faq .preguntas .h3 {
@@ -351,11 +342,51 @@
 }
 .faq .preguntas .tabla {
   table-layout: fixed;
-  width: 60%;
+  width: 70%;
   border-collapse: collapse;
   border: 3px solid #42b877;
   text-align: center;
 }
 .faq .preguntas .h3 {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .promos {
+    font-size: medium;
+  }
+
+  .parrafoAbout {
+    height: 80vh;
+  }
+
+  .preguntas {
+    font-size: small;
+    width: 90%;
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .table {
+    width: 80%;
+  }
+
+  .form__btn {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 85vh;
+  }
+
+  .article1 {
+    align-items: center;
+  }
+}
+.footer {
+  background-color: #000;
+  border-top-style: groove;
+  color: #ffffff;
+  font-size: x-small;
+  text-align: center;
+  width: 100%;
 }/*# sourceMappingURL=estilos.css.map */

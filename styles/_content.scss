@@ -129,11 +129,11 @@
         .form {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
             color: $negro;
             background-color: $beige;
-            height: 70%;
-            width: 50%;
+            height: 80%;
+            width: 100%;
             padding: 50px;
 
             .article1 {
@@ -176,7 +176,7 @@
 
                     .form__btn {
                         width: 5vw;
-                        height: 3vh;
+                        height: 5vh;
                         border-radius: 5px;
                         cursor: pointer;
                         letter-spacing: 2px;
@@ -221,7 +221,7 @@
                 background-color: $transparente;
                 text-align: justify;
                 margin: 20px;
-                width: 50%;
+                width: 70%;
                 overflow: hidden;
 
                 .h3 {
@@ -230,7 +230,7 @@
 
                 .tabla {
                     table-layout: fixed;
-                    width: 60%;
+                    width: 70%;
                     border-collapse: collapse;
                     border: 3px solid $verde;
                     text-align: center;
@@ -239,5 +239,35 @@
                  .h3 {
                     text-align: center;
                 }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .promos{
+                font-size: medium;
+            }
+
+            .parrafoAbout{
+                height: 80vh;
+            }
+            .preguntas {
+                font-size: small;
+                width:90%;
+                height:100%;
+                margin-top: 0px;
+            }
+            .table {
+                width: 80%;
+            }
+        
+            .form__btn {
+                display: flex;
+                flex-direction: column;
+                width: 15vw;
+                height: 85vh;
+            }
+            
+            .article1 {
+                align-items: center;
             }
         }
