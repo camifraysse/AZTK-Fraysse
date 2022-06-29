@@ -133,15 +133,6 @@
   width: 50%;
 }
 
-@media screen and (max-width: 768px) {
-  .indexGridFonts {
-    font-size: larger;
-  }
-
-  .promos {
-    font-size: medium;
-  }
-}
 .productos {
   background-image: url(../assets/background5.JPG);
   background-size: cover;
@@ -360,7 +351,20 @@
   text-align: center;
 }
 
+.footer {
+  background-color: #000;
+  border-top-style: groove;
+  color: #ffffff;
+  font-size: x-small;
+  text-align: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
+  .indexGridFonts {
+    font-size: larger;
+  }
+
   .promos {
     font-size: medium;
   }
@@ -390,12 +394,4 @@
   .article1 {
     align-items: center;
   }
-}
-.footer {
-  background-color: #000;
-  border-top-style: groove;
-  color: #ffffff;
-  font-size: x-small;
-  text-align: center;
-  width: 100%;
 }/*# sourceMappingURL=estilos.css.map */

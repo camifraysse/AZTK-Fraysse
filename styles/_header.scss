@@ -129,20 +129,11 @@
         text-align: center;
         height: 5vh;
         font-size:auto;
-    }
+}
 
 .nav {
         font-size: x-large;
         .logo{
             width: 50%;
         }
-    }
-
-@media screen and (max-width: 768px) {
-    .indexGridFonts{
-        font-size: larger;
-    }
-    .promos{
-        font-size: medium;
-    }
 }

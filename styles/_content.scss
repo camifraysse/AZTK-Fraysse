@@ -202,7 +202,6 @@
     display: flex;
     flex-flow: column wrap;
     align-content:space-around;
-
         .h1 {
             color: $negro;
             font-weight: bold;
@@ -240,34 +239,4 @@
                     text-align: center;
                 }
             }
-        }
-
-        @media screen and (max-width: 768px) {
-            .promos{
-                font-size: medium;
-            }
-
-            .parrafoAbout{
-                height: 80vh;
-            }
-            .preguntas {
-                font-size: small;
-                width:90%;
-                height:100%;
-                margin-top: 0px;
-            }
-            .table {
-                width: 80%;
-            }
-        
-            .form__btn {
-                display: flex;
-                flex-direction: column;
-                width: 15vw;
-                height: 85vh;
-            }
-            
-            .article1 {
-                align-items: center;
-            }
-        }
+}
