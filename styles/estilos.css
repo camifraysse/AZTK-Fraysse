@@ -2,8 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+}
+
+.instagram {
+  background-color: rgba(195, 34, 195, 0.4549019608);
+}
+
+.tiktok {
+  background-color: rgba(255, 255, 255, 0.5333333333);
 }
 
 .headerIndex {
@@ -138,7 +145,7 @@
 .productos {
   background-image: url(../assets/background5.jpg);
 }
-.productos .h1 {
+.productos .titulos1 {
   color: #000;
   font-weight: bold;
   font-size: xx-large;
@@ -149,10 +156,9 @@
 .productos .parrafos {
   padding: 20px;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.773);
+  background-color: rgba(255, 255, 255, 0.7725490196);
   text-align: justify;
   margin: 20px;
-  font-weight: bold;
   font-size: medium;
 }
 .productos .cards {
@@ -179,14 +185,7 @@
   background-color: #ffffff;
   margin: 10px;
 }
-.productos .cards .cards-productos .cards-title {
-  position: static;
-  background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  color: #000;
-  overflow: hidden;
-}
-.productos .cards .cards-productos .cards-description {
+.productos .cards .cards-productos .cards-title, .productos .cards .cards-productos .cards-description {
   position: static;
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -211,7 +210,7 @@
   flex-flow: column wrap;
   align-content: space-around;
 }
-.about .hh1 {
+.about .titulos2 {
   color: #ffffff;
   font-weight: bolder;
   font-size: xx-large;
@@ -222,11 +221,10 @@
 .about .parrafoAbout {
   padding: 20px;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.773);
+  background-color: rgba(255, 255, 255, 0.7725490196);
   text-align: justify;
-  font-weight: bold;
   font-size: medium;
-  width: 50vw;
+  width: 65vw;
 }
 
 .contenido__contacto {
@@ -240,7 +238,7 @@
   flex-flow: column wrap;
   align-content: space-around;
 }
-.contenido__contacto .hh1 {
+.contenido__contacto .titulos2 {
   color: #ffffff;
   font-weight: bolder;
   font-size: xx-large;
@@ -253,9 +251,9 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   color: #000;
-  background-color: rgba(250, 235, 215, 0.512);
-  height: 80%;
-  width: 65vw;
+  background-color: rgba(250, 235, 215, 0.5137254902);
+  height: 85%;
+  width: 90vw;
   padding: 50px;
 }
 .contenido__contacto .form .article1 {
@@ -292,12 +290,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 50%;
 }
 .contenido__contacto .form .form__mensaje .form__btns .form__btn {
-  width: 5vw;
+  width: 15vw;
   height: 5vh;
   border-radius: 5px;
-  cursor: pointer;
   letter-spacing: 2px;
   transition: all 0.5s ease;
   overflow: hidden;
@@ -306,6 +304,16 @@
   background: #42b877;
   color: #000;
   box-shadow: 0px 10px 25px #8ecaa9;
+}
+.contenido__contacto .form .form__mensaje .redesSociales {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.contenido__contacto .form .form__mensaje .redesSociales .icono {
+  border-radius: 50%;
+  width: 2vw;
+  height: 4vh;
 }
 
 .faq {
@@ -316,7 +324,7 @@
   flex-flow: column wrap;
   align-content: space-around;
 }
-.faq .h1 {
+.faq .titulos1 {
   color: #000;
   font-weight: bold;
   font-size: xx-large;
@@ -330,23 +338,22 @@
   align-items: center;
   padding: 40px;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.773);
+  background-color: rgba(255, 255, 255, 0.7725490196);
   text-align: justify;
   margin: 20px;
   width: 70%;
   overflow: hidden;
 }
-.faq .preguntas .h3 {
+.faq .preguntas .subtitulos {
   text-align: center;
+  font-size: large;
+  width: 200%;
 }
 .faq .preguntas .tabla {
   table-layout: fixed;
   width: 70%;
   border-collapse: collapse;
   border: 3px solid #42b877;
-  text-align: center;
-}
-.faq .preguntas .h3 {
   text-align: center;
 }
 
@@ -369,8 +376,8 @@
   }
 
   .parrafoAbout {
+    width: 90%;
     height: 80vh;
-    width: 100%;
   }
 
   .preguntas {
@@ -391,7 +398,6 @@
   .form__btn {
     display: flex;
     flex-direction: column;
-    width: 80vw;
     height: 85vh;
   }
 
