@@ -9,6 +9,7 @@
 
     .parrafoAbout{
         height: 80vh;
+        width: 100%;
     }
     .preguntas {
         font-size: small;
@@ -20,14 +21,18 @@
         width: 80%;
     }
 
+    .form__btns {
+        flex-flow: column wrap;
+    }
+
     .form__btn {
         display: flex;
         flex-direction: column;
-        width: 15vw;
+        width: 80vw;
         height: 85vh;
     }
     
     .article1 {
         align-items: center;
     }
-    }
+}
