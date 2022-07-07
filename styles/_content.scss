@@ -32,7 +32,7 @@
                     display: flex;
                     flex-flow: column nowrap;
                     align-items: center;
-                    @include tamano(450px, 250px);
+                    @include tamano(250px, 450px);
                     border-radius: 20px;
                     background-color: $blanco;
                     overflow: hidden;
@@ -77,14 +77,23 @@
     align-content: space-around;
 
         .titulos2 {
-            @extend .titulos;
+            @extend .titulos1;
             color: $blanco;
+            text-align: center;
+            text-decoration: underline;
+            height: 15%;
+            padding: 30px;
         }
 
         .parrafoAbout{
-            @extend .parrafo;
-            width: 65vw;
+            width: 70vw;
+            background-color: $transparente;
+            text-align: justify;
+            margin: 20px;
+            font-size: medium;
+            padding: 20px;
         }
+
 }
 
 .contenido__contacto {
@@ -99,7 +108,11 @@
     align-content: space-around;
 
         .titulos2 {
-            @extend .titulos;
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+            text-decoration: underline;
+            padding: 20px;
             color: $blanco;
         }
 
@@ -180,10 +193,12 @@
 
                         .instagram {
                             background-color: map-get($redes, instagram);
+                            @include tamano(5vw,8vh);
                         }
 
                         .tiktok {
                             background-color: map-get($redes, tiktok );
+                            @include tamano(5vw,8vh)
                         }
                 }
             }
