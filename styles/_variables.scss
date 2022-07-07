@@ -10,3 +10,8 @@ $redes: (
     instagram: #ca5bceb9,
     tiktok:#ffffffc6,
 );
+
+@mixin tamano($width, $height) {
+    width: $width;
+    height: $height;
+}
