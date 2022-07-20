@@ -14,7 +14,7 @@
             padding: 20px;
             color: $negro;
             background-color: $transparente;
-            text-align: justify;
+            text-align: center;
             margin: 20px;
             font-size: medium;
         }
@@ -88,9 +88,10 @@
         .parrafoAbout{
             width: 70vw;
             background-color: $transparente;
-            text-align: justify;
+            text-align: center;
             margin: 20px;
-            font-size: medium;
+            font-size:medium;
+            font-weight: bold;
             padding: 20px;
         }
 
