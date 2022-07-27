@@ -16,7 +16,7 @@
             background-color: $transparente;
             text-align: center;
             margin: 20px;
-            font-size: medium;
+            font-size: larger;
         }
 
         .cards{
@@ -124,7 +124,7 @@
             color: $negro;
             background-color: $beige;
             height: 85%;
-            width: 90vw;
+            width: 70%;
             padding: 50px;
 
             .article1 {
@@ -164,7 +164,7 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
-                    width: 50%;
+                    width: 30%;
 
                     .form__btn {
                         width: 15vw;
@@ -194,12 +194,14 @@
 
                         .instagram {
                             background-color: map-get($redes, instagram);
-                            @include tamano(5vw,8vh);
+                            @include tamano(10%,8%);
+                            margin-left: 65%;
                         }
 
                         .tiktok {
                             background-color: map-get($redes, tiktok );
-                            @include tamano(5vw,8vh)
+                            @include tamano(10%,8%);
+                            margin-right: 65%;
                         }
                 }
             }
@@ -210,42 +212,49 @@
     background-image: url(../assets/background4.JPG);
     background-size: cover;
     background-position-x: center;
-    display: flex;
-    flex-flow: column wrap;
-    align-content:space-around;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+        "titulo titulo"
+        "preguntas preguntas";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 3fr;
+
         .titulos1 {
-            color: $negro;
-            font-weight: bold;
-            font-size: xx-large;
-            text-align: center;
-            text-decoration: underline;
-            padding: 20px;
+        grid-area: titulo;
+        color: $negro;
+        font-weight: bold;
+        font-size: xx-large;
+        text-align: center;
+        text-decoration: underline;
+        padding: 20px;
         }
 
-            .preguntas {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 40px;
-                color: $negro;
-                background-color: $transparente;
-                text-align: justify;
-                margin: 20px;
-                width: 70%;
-                overflow: hidden;
+        .preguntas {
+            grid-area: preguntas;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            color: $negro;
+            background-color: $transparente;
+            text-align: justify;
+            margin: 20px;
+            width: 70%;
+            overflow: hidden;
 
-                .subtitulos {
-                    text-align: center;
-                    font-size: large;
-                    width: 200%;
-                }
-
-                .tabla {
-                    table-layout: fixed;
-                    width: 70%;
-                    border-collapse: collapse;
-                    border: 3px solid $verde;
-                    text-align: center;
-                }
+            .subtitulos {
+                text-align: center;
+                font-weight: bold;
+                overflow:hidden;
             }
-}
+
+            .tabla {
+                table-layout: fixed;
+                width: 60vw;
+                border-collapse: collapse;
+                border: 3px solid $verde;
+                text-align: center,
+            }
+        }
+    }
