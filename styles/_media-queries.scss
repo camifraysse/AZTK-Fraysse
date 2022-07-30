@@ -2,9 +2,9 @@
     .indexGridFonts{
         font-size: larger;
     }
-    
-    .promos{
-        font-size: medium;
+
+    .aboutIndex {
+        background-position-y: center;
     }
 
     .about{
@@ -21,10 +21,6 @@
         width: 80%;
     }
 
-    .article1 {
-        align-items: center;
-    }
-
     .form__btns {
         flex-flow: column wrap;
     }
@@ -33,9 +29,15 @@
         display: flex;
         flex-direction: column;
         height: 85vh;
+        font-size:x-small;
+        font-weight: bold;
+        text-align: center;
     }
 
     .footer {
-        height: 10vh;
+        height: 7vh;
+    }
+    .copyright {
+        width: 20%;
     }
 }

@@ -27,6 +27,9 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin-bottom: 10px;
+            -webkit-animation:fade-in-left .6s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-left .6s cubic-bezier(.39,.575,.565,1.000) both;
+
+            @-webkit-keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 
                 .cards-productos {
                     display: flex;
@@ -64,6 +67,7 @@
                             overflow: hidden;
                         }
                 }
+                
         }
 }
 
@@ -83,6 +87,7 @@
             text-decoration: underline;
             height: 15%;
             padding: 30px;
+            overflow: hidden;
         }
 
         .parrafoAbout{
@@ -123,8 +128,7 @@
             justify-content: space-evenly;
             color: $negro;
             background-color: $beige;
-            height: 85%;
-            width: 70%;
+            height: 80%;
             padding: 50px;
 
             .article1 {
@@ -164,7 +168,7 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
-                    width: 30%;
+                    width: 20%;
 
                     .form__btn {
                         width: 15vw;
@@ -194,14 +198,14 @@
 
                         .instagram {
                             background-color: map-get($redes, instagram);
-                            @include tamano(10%,8%);
-                            margin-left: 65%;
+                            @include tamano(15%,10%);
+                            margin-left: 80%;
                         }
 
                         .tiktok {
                             background-color: map-get($redes, tiktok );
-                            @include tamano(10%,8%);
-                            margin-right: 65%;
+                            @include tamano(15%,10%);
+                            margin-right:80%;
                         }
                 }
             }
@@ -245,8 +249,6 @@
 
             .subtitulos {
                 text-align: center;
-                font-weight: bold;
-                overflow:hidden;
             }
 
             .tabla {

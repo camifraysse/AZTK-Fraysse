@@ -9,7 +9,8 @@
             color: $blanco;
             text-align: center;
             height: 5vh;
-            font-size:auto;
+            padding: 5px;
+            font-size: large;
         }
 
         .logoIndex {
@@ -30,7 +31,7 @@
         .productosIndex {
             background-image: url(../assets/productos.png);
             background-size: cover;
-            background-position-x: center;
+            background-position: center;
 
                 .indexGridFonts {
                     color: $blanco;
@@ -55,6 +56,7 @@
             background-image: url(../assets/about2.png);
             background-size: cover;
             background-position-x: center;
+            overflow: hidden;
 
                 .indexGridFonts {
                     color: $blanco;
@@ -102,8 +104,8 @@
             text-align: center;
             background-image: url(../assets/faq.png);
             background-size: cover;
-            background-position-x: center;
-            background-position-y: center;
+            background-position: center;
+            overflow: hidden;
 
                 .indexGridFonts {
                     color: $blanco;

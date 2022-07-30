@@ -4,8 +4,37 @@
     color: $blanco;
     font-size: x-small;
     text-align: center;
+    padding: 10px;
+    height: 5vh;
     width: 100%;
     list-style: none;
-    padding: 10px;
     overflow: hidden;
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+        
+                .accesos {
+                margin-left: 5px; 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                }
+
+                .copyright {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                .redes {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+        }
+
 }
