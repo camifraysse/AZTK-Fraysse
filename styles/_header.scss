@@ -4,13 +4,12 @@
     height: 100vh;
     background-position-x: center;
     overflow: hidden;
-        .promos {
+        .promosIndex {
             background-color: $verde;
             color: $blanco;
-            text-align: center;
-            height: 5vh;
-            padding: 5px;
+            height: auto;
             font-size: large;
+            text-align: center;
         }
 
         .logoIndex {
@@ -38,7 +37,7 @@
                     background-color: $negro-transparente;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bolder;
-                    font-size: xx-large;
+                    font-size: auto;
                     text-transform: uppercase;
                     text-decoration: none;
 
@@ -63,7 +62,7 @@
                     background-color: $negro-transparente;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bolder;
-                    font-size: xx-large;
+                    font-size: auto;
                     text-transform: uppercase;
                     text-decoration: none;
 
@@ -87,7 +86,7 @@
                     background-color: $negro-transparente;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bolder;
-                    font-size: xx-large;
+                    font-size: auto;
                     text-transform: uppercase;
                     text-decoration: none;
 
@@ -112,7 +111,7 @@
                     background-color: $negro-transparente;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bolder;
-                    font-size: xx-large;
+                    font-size: auto;
                     text-transform: uppercase;
                     text-decoration: none;
 
@@ -127,17 +126,18 @@
 }
 
 .promos {
-        background-color: $verde;
-        color: $blanco;
-        text-align: center;
-        height: 5vh;
-        font-size:auto;
-        margin-bottom: 0;
+background-color: $verde;
+color: $blanco;
+text-align: center;
+padding: 5px;
+height: auto;
+font-size:larger;
+overflow: hidden;
+margin-bottom: 0;
 }
-
 .nav {
-        font-size: x-large;
-        .logo{
-            width: 50%;
-        }
+    font-size: x-large;
+    .logo{
+        width: 50%;
+    }
 }

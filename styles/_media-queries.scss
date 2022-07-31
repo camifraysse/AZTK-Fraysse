@@ -1,7 +1,15 @@
 @media screen and (max-width: 768px) {
-    .indexGridFonts{
-        font-size: larger;
-    }
+    .headerIndex {
+        background-position: top;
+
+        .promosIndex {
+            overflow: hidden;
+        }
+
+        .promos {
+            size: medium;
+        }
+        }
 
     .aboutIndex {
         background-position-y: center;
@@ -10,34 +18,34 @@
     .about{
         flex-flow: column nowrap;
         align-items: center;
-    }
-    
-    .parrafoAbout{
-        width:90%;
-        height:80%;
+
+            .parrafoAbout{
+                width:90%;
+                height:80%;
+            }
+
+            .fotos {
+                width: 90%;
+            }
     }
     
     .tabla {
         width: 80%;
     }
 
-    .form__btns {
-        flex-flow: column wrap;
+    .instagram {
+        display: none;
     }
 
-    .form__btn {
-        display: flex;
-        flex-direction: column;
-        height: 85vh;
-        font-size:x-small;
-        font-weight: bold;
-        text-align: center;
+    .tiktok {
+        display: none;
     }
 
     .footer {
-        height: 7vh;
-    }
-    .copyright {
-        width: 20%;
+        height: 15vh;
+
+            .copyright {
+                width: 20%;
+            }
     }
 }

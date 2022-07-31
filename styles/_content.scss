@@ -7,7 +7,7 @@
             font-size: xx-large;
             text-align: center;
             text-decoration: underline;
-            padding: 20px;
+            padding: 5%;
         }
 
         .parrafos{
@@ -72,21 +72,20 @@
 }
 
 .about {
-    height: 100vh;
-    background-image: url(../assets/background3.JPG);
-    background-size: cover;
+    height: 100%;
+    background-image: url(../assets/background3copia.JPG);
+    background-size:cover;
     background-position-x: center;
     display: flex;
     flex-flow: column wrap;
     align-content: space-around;
+    align-items: center;
+    padding: 10px;
 
         .titulos2 {
             @extend .titulos1;
             color: $blanco;
-            text-align: center;
             text-decoration: underline;
-            height: 15%;
-            padding: 30px;
             overflow: hidden;
         }
 
@@ -100,12 +99,17 @@
             padding: 20px;
         }
 
+        .fotos {
+            height: 40%;
+            width: 45%;
+        }
+
 }
 
 .contenido__contacto {
     background-image: url(../assets/background2.JPG);
     background-size: cover;
-    height: 100vh;
+    height: 90%;
     background-repeat: no-repeat;
     background-position-x: center;
     padding: 20px;
@@ -128,8 +132,8 @@
             justify-content: space-evenly;
             color: $negro;
             background-color: $beige;
-            height: 80%;
-            padding: 50px;
+            height: 85%;
+            padding: 30px;
 
             .article1 {
                 display: flex;
@@ -163,29 +167,7 @@
                     align-items: center;
                     background-color:$negro-transparente;
                 }
-
-                .form__btns{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    width: 20%;
-
-                    .form__btn {
-                        width: 15vw;
-                        height: 5vh;
-                        border-radius: 5px;
-                        letter-spacing: 2px;
-                        transition: all 0.5s ease;
-                        overflow: hidden;
-
-                        &:hover {
-                            background: $verde;
-                            color: $negro;
-                            box-shadow: 0px 10px 25px
-                            $verdeClaro;
-                        }
-                    }
-                }
+            }
 
                 .redesSociales {
                     display: flex;
@@ -198,17 +180,16 @@
 
                         .instagram {
                             background-color: map-get($redes, instagram);
-                            @include tamano(15%,10%);
-                            margin-left: 80%;
+                            @include tamano(10%,5%);
+                            margin-left: 85%;
                         }
 
                         .tiktok {
                             background-color: map-get($redes, tiktok );
-                            @include tamano(15%,10%);
-                            margin-right:80%;
+                            @include tamano(10%,5%);
+                            margin-right: 85%;
                         }
                 }
-            }
         }
 }
 
@@ -249,6 +230,7 @@
 
             .subtitulos {
                 text-align: center;
+                overflow: hidden;
             }
 
             .tabla {
@@ -258,5 +240,6 @@
                 border: 3px solid $verde;
                 text-align: center,
             }
+
         }
     }

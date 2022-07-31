@@ -10,13 +10,12 @@
   height: 100vh;
   background-position-x: center;
   overflow: hidden; }
-  .headerIndex .promos {
+  .headerIndex .promosIndex {
     background-color: #42b877;
     color: #ffffff;
-    text-align: center;
-    height: 5vh;
-    padding: 5px;
-    font-size: large; }
+    height: auto;
+    font-size: large;
+    text-align: center; }
   .headerIndex .logoIndex {
     height: 10%;
     display: block;
@@ -38,7 +37,7 @@
       background-color: #faebd700;
       font-family: 'Poppins', sans-serif;
       font-weight: bolder;
-      font-size: xx-large;
+      font-size: auto;
       text-transform: uppercase;
       text-decoration: none; }
       .ul .productosIndex .indexGridFonts:hover {
@@ -56,7 +55,7 @@
       background-color: #faebd700;
       font-family: 'Poppins', sans-serif;
       font-weight: bolder;
-      font-size: xx-large;
+      font-size: auto;
       text-transform: uppercase;
       text-decoration: none; }
       .ul .aboutIndex .indexGridFonts:hover {
@@ -73,7 +72,7 @@
       background-color: #faebd700;
       font-family: 'Poppins', sans-serif;
       font-weight: bolder;
-      font-size: xx-large;
+      font-size: auto;
       text-transform: uppercase;
       text-decoration: none; }
       .ul .contactoIndex .indexGridFonts:hover {
@@ -91,7 +90,7 @@
       background-color: #faebd700;
       font-family: 'Poppins', sans-serif;
       font-weight: bolder;
-      font-size: xx-large;
+      font-size: auto;
       text-transform: uppercase;
       text-decoration: none; }
       .ul .faqIndex .indexGridFonts:hover {
@@ -103,8 +102,10 @@
   background-color: #42b877;
   color: #ffffff;
   text-align: center;
-  height: 5vh;
-  font-size: auto;
+  padding: 5px;
+  height: auto;
+  font-size: larger;
+  overflow: hidden;
   margin-bottom: 0; }
 
 .nav {
@@ -120,7 +121,7 @@
     font-size: xx-large;
     text-align: center;
     text-decoration: underline;
-    padding: 20px; }
+    padding: 5%; }
   .productos .parrafos {
     padding: 20px;
     color: #000;
@@ -186,19 +187,18 @@
         overflow: hidden; }
 
 .about {
-  height: 100vh;
-  background-image: url(../assets/background3.JPG);
+  height: 100%;
+  background-image: url(../assets/background3copia.JPG);
   background-size: cover;
   background-position-x: center;
   display: flex;
   flex-flow: column wrap;
-  align-content: space-around; }
+  align-content: space-around;
+  align-items: center;
+  padding: 10px; }
   .about .titulos2 {
     color: #ffffff;
-    text-align: center;
     text-decoration: underline;
-    height: 15%;
-    padding: 30px;
     overflow: hidden; }
   .about .parrafoAbout {
     width: 70vw;
@@ -208,11 +208,14 @@
     font-size: medium;
     font-weight: bold;
     padding: 20px; }
+  .about .fotos {
+    height: 40%;
+    width: 45%; }
 
 .contenido__contacto {
   background-image: url(../assets/background2.JPG);
   background-size: cover;
-  height: 100vh;
+  height: 90%;
   background-repeat: no-repeat;
   background-position-x: center;
   padding: 20px;
@@ -232,8 +235,8 @@
     justify-content: space-evenly;
     color: #000;
     background-color: #faebd783;
-    height: 80%;
-    padding: 50px; }
+    height: 85%;
+    padding: 30px; }
     .contenido__contacto .form .article1 {
       display: flex;
       flex-flow: column nowrap;
@@ -260,38 +263,22 @@
         justify-content: center;
         align-items: center;
         background-color: #faebd700; }
-      .contenido__contacto .form .form__mensaje .form__btns {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 20%; }
-        .contenido__contacto .form .form__mensaje .form__btns .form__btn {
-          width: 15vw;
-          height: 5vh;
-          border-radius: 5px;
-          letter-spacing: 2px;
-          transition: all 0.5s ease;
-          overflow: hidden; }
-          .contenido__contacto .form .form__mensaje .form__btns .form__btn:hover {
-            background: #42b877;
-            color: #000;
-            box-shadow: 0px 10px 25px #8ecaa9; }
-      .contenido__contacto .form .form__mensaje .redesSociales {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center; }
-        .contenido__contacto .form .form__mensaje .redesSociales .icono {
-          border-radius: 50%; }
-        .contenido__contacto .form .form__mensaje .redesSociales .instagram {
-          background-color: #e37cea;
-          width: 15%;
-          height: 10%;
-          margin-left: 80%; }
-        .contenido__contacto .form .form__mensaje .redesSociales .tiktok {
-          background-color: #ffffffc6;
-          width: 15%;
-          height: 10%;
-          margin-right: 80%; }
+    .contenido__contacto .form .redesSociales {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center; }
+      .contenido__contacto .form .redesSociales .icono {
+        border-radius: 50%; }
+      .contenido__contacto .form .redesSociales .instagram {
+        background-color: #e37cea;
+        width: 10%;
+        height: 5%;
+        margin-left: 85%; }
+      .contenido__contacto .form .redesSociales .tiktok {
+        background-color: #ffffffc6;
+        width: 10%;
+        height: 5%;
+        margin-right: 85%; }
 
 .faq {
   background-image: url(../assets/background4.JPG);
@@ -323,7 +310,8 @@
     width: 70%;
     overflow: hidden; }
     .faq .preguntas .subtitulos {
-      text-align: center; }
+      text-align: center;
+      overflow: hidden; }
     .faq .preguntas .tabla {
       table-layout: fixed;
       width: 60vw;
@@ -338,7 +326,7 @@
   font-size: x-small;
   text-align: center;
   padding: 10px;
-  height: 5vh;
+  height: 5%;
   width: 100%;
   list-style: none;
   overflow: hidden; }
@@ -364,28 +352,29 @@
       align-items: center; }
 
 @media screen and (max-width: 768px) {
-  .indexGridFonts {
-    font-size: larger; }
+  .headerIndex {
+    background-position: top; }
+    .headerIndex .promosIndex {
+      overflow: hidden; }
+    .headerIndex .promos {
+      size: medium; }
   .aboutIndex {
     background-position-y: center; }
   .about {
     flex-flow: column nowrap;
     align-items: center; }
-  .parrafoAbout {
-    width: 90%;
-    height: 80%; }
+    .about .parrafoAbout {
+      width: 90%;
+      height: 80%; }
+    .about .fotos {
+      width: 90%; }
   .tabla {
     width: 80%; }
-  .form__btns {
-    flex-flow: column wrap; }
-  .form__btn {
-    display: flex;
-    flex-direction: column;
-    height: 85vh;
-    font-size: x-small;
-    font-weight: bold;
-    text-align: center; }
+  .instagram {
+    display: none; }
+  .tiktok {
+    display: none; }
   .footer {
-    height: 7vh; }
-  .copyright {
-    width: 20%; } }
+    height: 15vh; }
+    .footer .copyright {
+      width: 20%; } }
