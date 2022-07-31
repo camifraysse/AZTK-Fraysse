@@ -135,6 +135,10 @@
             height: 85%;
             padding: 30px;
 
+            input {
+                accent-color: $verde;
+            }
+
             .article1 {
                 display: flex;
                 flex-flow: column nowrap;

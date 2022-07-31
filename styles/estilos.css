@@ -237,6 +237,8 @@
     background-color: #faebd783;
     height: 85%;
     padding: 30px; }
+    .contenido__contacto .form input {
+      accent-color: #42b877; }
     .contenido__contacto .form .article1 {
       display: flex;
       flex-flow: column nowrap;
