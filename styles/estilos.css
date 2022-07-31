@@ -15,7 +15,8 @@
     color: #ffffff;
     height: auto;
     font-size: large;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
   .headerIndex .logoIndex {
     height: 10%;
     display: block;
